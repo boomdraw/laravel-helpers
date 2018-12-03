@@ -4,7 +4,7 @@ This package allows you to generate helper classes with facades and aliases. Als
 
 Once installed you can do stuff like this:
 
-##Commands
+## Commands
 
 Run `config:cache`, `route:cache`, `view:cache` and `helpers:cache` at once
 ```bash
@@ -43,36 +43,39 @@ Generate helper class with facade in your project
 php artisan make:helper {class}
 ```
 
-##Traits
+## Traits
 
-###Route key getter
+### Route key getter
 ``` php
 use BoomDraw\Helpers\Traits\RouteKeyGetter.php
 ```
 Sets route key as id for admin* routes and as slug for other
 
-###Service name getter
+### Service name getter
 ``` php
 use BoomDraw\Helpers\Traits\ServiceNameGetter.php
 ```
 Adds `getServiceName()` method to generate service name for helper using classname
 
-###Table name getter
+### Table name getter
 ``` php
 use BoomDraw\Helpers\Traits\TableNameGetter.php
 ```
 Adds `getTableName()` method to get model table name
 Adds `getMorphName()` method to get model morph name
 
-##Helpers
+## Helpers
 
 ### SeoHelper
+
 Adds `columns()` method that allows fast adding meta_keywords, meta_description and robots columns to table migration
 
 ### StrHelper
+
 Adds `between`, `wbetween` and `utrim` methods
 
-###Global methods
+### Global methods
+
 `str_between`, `str_wbetween`, `utrim`
 
 ## Installation
@@ -119,7 +122,7 @@ return [
 ];
 ```
 
-##Todo
+## Todo
 
 Add other seo features
 
