@@ -5,17 +5,18 @@ This package allows you to generate helper classes with facades and aliases. Als
 Once installed you can do stuff like this:
 
 ##Commands
-Run config:cache, route:cache, view:cache and helpers:cache at once
+
+Run `config:cache`, `route:cache`, `view:cache` and `helpers:cache` at once
 ```bash
 php artisan cache:all
 ```
 
-Run cache:clear, config:clear, route:clear, view:clear and helpers:clear at once
+Run `cache:clear`, `config:clear`, `route:clear`, `view:clear` and `helpers:clear` at once
 ```bash
 php artisan cache:clear-all
 ```
 
-cache:clear-all alias
+`cache:clear-all` alias
 ```bash
 php artisan clear:all
 ```
@@ -30,11 +31,12 @@ Remove helpers from cache
 php artisan helpers:clear
 ```
 
-Run ide-helper:generate, ide-helper:meta and ide-helper:models --nowrite at once
-To run this command you should install barryvdh/laravel-ide-helper and doctrine/dbal first!
+Run `ide-helper:generate`, `ide-helper:meta` and `ide-helper:models --nowrite` at once.
+
 ```bash
 php artisan ide-helper:all
 ```
+To run this command you should install `barryvdh/laravel-ide-helper` and `doctrine/dbal` first!
 
 Generate helper class with facade in your project
 ```bash
@@ -42,6 +44,7 @@ php artisan make:helper {class}
 ```
 
 ##Traits
+
 ###Route key getter
 ``` php
 use BoomDraw\Helpers\Traits\RouteKeyGetter.php
@@ -52,26 +55,28 @@ Sets route key as id for admin* routes and as slug for other
 ``` php
 use BoomDraw\Helpers\Traits\ServiceNameGetter.php
 ```
-Adds getServiceName() method to generate service name for helper using classname
+Adds `getServiceName()` method to generate service name for helper using classname
 
 ###Table name getter
 ``` php
 use BoomDraw\Helpers\Traits\TableNameGetter.php
 ```
-Adds getTableName() method to get model table name
-Adds getMorphName() method to get model morph name
+Adds `getTableName()` method to get model table name
+Adds `getMorphName()` method to get model morph name
 
 ##Helpers
+
 ### SeoHelper
-Adds columns() method that allows fast adding meta_keywords, meta_description and robots columns to table migration
+Adds `columns()` method that allows fast adding meta_keywords, meta_description and robots columns to table migration
 
 ### StrHelper
-Adds between, wbetween and utrim methods
+Adds `between`, `wbetween` and `utrim` methods
 
 ###Global methods
-str_between, str_wbetween, utrim
+`str_between`, `str_wbetween`, `utrim`
 
 ## Installation
+
 ### Laravel
 
 You can install the package via composer:
@@ -115,6 +120,7 @@ return [
 ```
 
 ##Todo
+
 Add other seo features
 
 ## The MIT License (MIT).
