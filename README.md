@@ -1,11 +1,9 @@
 # Laravel helpers package
-
 This package allows you to generate helper classes with facades and aliases. Also it provides some helper commands and built in helpers.
 
 Once installed you can do stuff like this:
 
 ## Commands
-
 Run `config:cache`, `route:cache`, `view:cache` and `helpers:cache` at once
 ```bash
 php artisan cache:all
@@ -32,7 +30,6 @@ php artisan helpers:clear
 ```
 
 Run `ide-helper:generate`, `ide-helper:meta` and `ide-helper:models --nowrite` at once.
-
 ```bash
 php artisan ide-helper:all
 ```
@@ -44,7 +41,6 @@ php artisan make:helper {class}
 ```
 
 ## Traits
-
 ### Route key getter
 ``` php
 use BoomDraw\Helpers\Traits\RouteKeyGetter.php
@@ -65,37 +61,28 @@ Adds `getTableName()` method to get model table name
 Adds `getMorphName()` method to get model morph name
 
 ## Helpers
-
 ### SeoHelper
-
 Adds `columns()` method that allows fast adding meta_keywords, meta_description and robots columns to table migration
 
 ### StrHelper
-
 Adds `between`, `wbetween` and `utrim` methods
 
 ### Global methods
-
 `str_between`, `str_wbetween`, `utrim`
 
 ## Installation
-
 ### Laravel
-
 You can install the package via composer:
-
 ``` bash
 composer require boomdraw/laravel-helpers
 ```
 
 You can publish the config file with:
-
 ```bash
 php artisan vendor:publish --provider="BoomDraw\Helpers\HelpersServiceProvider" --tag="config"
 ```
 
 When published, [the `config/helpers.php` config file](https://github.com/boomdraw/laravel-helpers/blob/master/config/helpers.php) contains:
-
 ```php
 return [
 
@@ -123,9 +110,7 @@ return [
 ```
 
 ## Todo
-
 Add other seo features
 
 ## The MIT License (MIT).
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
